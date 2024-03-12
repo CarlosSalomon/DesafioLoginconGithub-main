@@ -1,0 +1,14 @@
+
+
+
+<div class="container filters">
+    <div class="buttonFeilter">
+        <div class="container-saludo">
+        <h5 class="saludos1">Usuario: {{user.name}}</h5>
+     <h5 class="saludos1">Rol: {{#if user.admin}}Admin{{else}}User{{/if}}</h5>
+        </div>
+        <button class="btn btn-outline-secondary" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Filtros</button>
+    </div>
+</div>
+

@@ -1,0 +1,39 @@
+[
+  {
+    "id": 1,
+    "title": "CASA",
+    "description": "Casa 2 dormitorios",
+    "price": 1500,
+    "thumbnail": "https://imagen/4fY5bvZ/z4.png",
+    "code": "cas123",
+    "stock": 4
+  },
+  {
+    "id": 2,
+    "title": "CASA",
+    "description": "Casa 3 dormitorios",
+    "price": 3500,
+    "thumbnail": "https://imagen/4fY5bvZ/z8.png",
+    "code": "cas124",
+    "stock": 5
+  },
+  {
+    "id": 3,
+    "title": "DEPARTAMENTO",
+    "description": "Departamento 2 ambientes",
+    "price": 2400,
+    "thumbnail": "https://imagen/4fY5/z1.png",
+    "code": "dpto123",
+    "stock": 3
+  },
+  {
+    "id": 4,
+    "title": "DEPARTAMENTO",
+    "description": "Departamento 3 ambientes",
+    "price": 4500,
+    "thumbnail": "https://imagen/8fd5/a6.png",
+    "code": "abasdasd128",
+    "stock": 1
+  }
+
+]

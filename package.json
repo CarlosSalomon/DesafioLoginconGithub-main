@@ -1,0 +1,30 @@
+{
+  "name": "desafiologin-salomon",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/app.js"
+  },
+  "keywords": [],
+  "author": "Carlos Salomon",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "connect-mongo": "^5.1.0",
+    "cookie-parser": "^1.4.6",
+    "express": "^4.18.3",
+    "express-handlebars": "^7.1.2",
+    "express-session": "^1.18.0",
+    "mongodb": "^6.3.0",
+    "mongoose": "^7.6.8",
+    "mongoose-paginate-v2": "^1.8.0",
+    "nodemon": "^3.0.3",
+    "passport": "^0.7.0",
+    "passport-github2": "^0.1.12",
+    "passport-local": "^1.0.0",
+    "socket.io": "^4.7.4",
+    "sweetalert2": "^11.10.5"
+  }
+}

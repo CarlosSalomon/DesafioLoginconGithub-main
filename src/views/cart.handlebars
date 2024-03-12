@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <script src="js/cart.js" defer></script>
+  <title>Document</title>
+</head>
+<body>
+     {{>navBar}}
+  <h1>Productos en tu Carrito</h1>
+  <table class="table table-dark table-striped">
+    <thead>
+      <tr>
+        <th scope="col">#ID</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Imagen</th>
+        <th scope="col">Cantidad</th>
+        <th scope="col">Precio</th>
+        <th scope="col">Eliminar</th> 
+        <th scope="col">Total</th>
+      </tr>
+    </thead>
+    <tbody>
+  {{#each productList}}
+      
+        <tr id="data-product" data-product-price="{{this.price}}" data-product-quantity="{{this.quantity}}">
+        <th scope="row">{{this._id}}</th>
+        <td>{{this.title}}</td>
+       <td><img src="{{this.thumbnail}}" alt="Imagen del producto" class="imgcart"></td>
+        <td>{{this.quantity}}</td>
+        <td>{{this.price }}</td>
+
+        <td>
+          <button type="submit" data-product-id="{{this._id}}" class=" btndl delete-to-cart-button">Eliminar</button>
+        </td>
+         <td id="total">{{totalPriceProduct}}</td>
+      </tr>
+  {{/each}}
+       <tr>
+      <td colspan="6">Total General:</td>
+      <td id="totalGeneral"></td>
+    </tr>
+   </tbody>
+
+  </table>  
+<button class="btn-pd" id="empty-cart-button">Vaciar Carrito</button>
+</body>
+</html>
+

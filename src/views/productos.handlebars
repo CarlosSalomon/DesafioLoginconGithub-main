@@ -1,0 +1,96 @@
+      {{>navBar}}
+      
+    {{>filtros}}
+
+<div>
+  <h1>Listado de Productos</h1>
+</div>
+
+<article id="list-products">
+  {{#each docs}}
+  <div class="cards-container">
+    <div class="card">
+      <img src="{{thumbnail}}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{title}}</h5>
+        <p class="card-text"></p>
+        <p class="card-text">US${{this.price}}</p>
+        <div class="card-body">
+          <a href="/{{this._id}}" class="card-linkA">Ver mas</a>
+        </div>
+        <div class="add-quantity">
+          <button type="submit" data-product-id="{{this._id}}" class="btn btn-primary add-to-cart-button">Añadir al
+            Carrito</button>
+          <div class="quantity-input">
+            <input type="number" value="1" min="1" class="quantity-input-field inpcant">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {{/each}}
+</article>
+<div class="page">
+  <div>
+    {{#if hasPrevPage}}
+    <a href="{{prevLink}}" class="prev-page">Anterior</a>
+    {{/if}}
+  </div>
+
+  <div >
+    <p class="counter-page">
+      {{page}} de {{totalPages}}
+    </p>
+  </div>
+  <div>
+    {{#if hasNextPage}}
+    <a href="{{nextLink}}" class="next-page">Siguiente</i></a>
+    {{/if}}
+  </div>
+</div>
+
+<div class="offcanvas offcanvas-end offcanvas-css" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasRightLabel">Filtrar por:</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <h5>Precio:</h5>
+    <form id="sortForm">
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="asc">
+        <label class="form-check-label" for="exampleRadios1">
+          Menor precio
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="desc">
+        <label class="form-check-label" for="exampleRadios2">
+          Mayor precio
+        </label>
+      </div>
+      <div class="form-group">
+        <label for="categorySelect">Categoría:</label>
+        <select class="form-control" id="categorySelect">
+          <option value="">Todas las categorías</option>
+          <option value="casa">casa</option>
+          <option value="departamento">Departamento</option>
+          <option value="quinta">Quinta</option>
+        </select>
+      
+      </div>
+      <button class="btn-pd pd2" type="button" id="filtrar">filtrar</button>
+    </form>
+  </div>
+</div>
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+<script src="js/cart.js" defer></script>
+<script>
+
+</script>

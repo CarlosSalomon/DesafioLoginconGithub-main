@@ -1,0 +1,426 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background: #243340;
+
+}
+.btn-git {
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.css-1j7yzl5 {
+  background-color: #000000;
+  margin-top: 16px;
+  border-radius: 26px;
+  width: 125px;
+  height: 48px;
+}
+.leafygreen-ui-1c87knv {
+  border: 1px solid rgb(255, 255, 255);
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.css-dw6a9n {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+/* --------------button github-------- */
+
+
+.navbar {
+  width: 100%;
+}
+
+
+#list-products {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.container {
+  position: relative;
+}
+
+.cards-container {
+  display: flex;
+  padding: 10px;
+}
+
+.card-img-top {
+  height: 200px !important;
+}
+.card-linkA{
+color: #223e50;
+
+}
+
+
+#formProduct {
+  display: flex;
+  flex-wrap: wrap;
+  background: #223e50;
+  padding: 85px;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 60px;
+  border-radius: 4px;
+  font-family: 'calibri';
+  color: white;
+  box-shadow: 7px 13px 37px #4a74ce;
+}
+
+
+.controls {
+  width: 100%;
+  background-color: transparent;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 16px;
+  border: 3px solid #737d9f9d;
+  font-family: 'calibri';
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+}
+
+#formProduct p {
+  color: #ffffff;
+  height: 40px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 40px;
+}
+
+h2 {
+  color: #ffffff;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 25px;
+  line-height: 40px;
+  margin-top: 25px;
+  margin-bottom: -80px;
+}
+
+#formProduct h2 {
+  margin: 0 auto;
+  height: 40px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 40px;
+
+  @media screen and (max-width: 425px) {
+    font-size: 10px;
+  }
+}
+
+#formProduct a {
+  color: white;
+  text-decoration: none;
+}
+
+#formProduct a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+#formProduct .botons {
+
+  width: 100%;
+  background: #020b2b8a;
+  border-radius: 6px;
+  padding: 12px;
+  color: white;
+  margin: 16px 0;
+  font-size: 16px;
+}
+
+
+h1 {
+  color: aliceblue;
+  box-shadow: #0252ff;
+
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  width: 16rem;
+
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.card-text {
+  color: #4f4f51;
+
+}
+
+.btndl {
+  width: 50px;
+  color: #ffffff;
+  font-size: 10px;
+  border-radius: 4px;
+  background-color: #900101;
+  border-color: #ffffff;
+}
+
+.imgcart {
+  display: flex;
+  border-radius: 6px;
+  background-size: auto;
+  width: 60px;
+  height: 60px;
+}
+
+.page {
+  display: flex;
+  flex-direction: row;
+}
+
+.prev-page {
+  padding: 10px;
+
+}
+
+.count-page {
+  padding: 10px;
+}
+
+.next-page {
+  padding: 10px;
+}
+
+.inpcant {
+  display: flex;
+  justify-content: center;
+  width: 50px;
+  margin: 0 auto;
+  margin-top: 5px;
+  border-radius: 5px;
+
+}
+
+.pd-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+
+.img-pdt {
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 320px;
+  max-width: 800px;
+
+  margin: 0 auto;
+
+  border-radius: 10px;
+
+}
+
+.datos {
+  color: #ffffff;
+
+}
+
+.titlepd {
+  color: #900101;
+  font-style: italic;
+}
+
+.btn-pd {
+  width: 100px;
+  border-radius: 10px;
+  background-color: #900101;
+  color: #ffffff;
+}
+
+.pd2 {
+  display: flex;
+  margin-top: 10px;
+  justify-content: center;
+  margin: 0 auto;
+
+}
+
+.offcanvas-css {
+  display: flex;
+  margin-top: 150px;
+  background-color: #243340;
+  border-radius: 10px;
+  color: #ffffff;
+  height: 350px;
+}
+
+.offcanvas-header {
+  display: flex;
+}
+
+.btn-close {
+  color: #900101;
+  background-color: #900101;
+  border-radius: 5px;
+  border-color: #ffffff;
+}
+
+.counter-page {
+  color: #ffffff;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  margin-block-start: auto;
+  margin-top: 25px;
+}
+
+.filters {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+}
+
+.background-home {
+display: flex;
+width: 100%;
+height: 100vh;
+background-image: url(../images/home.jpg);
+background-position: center;
+background-size: cover;
+
+}
+
+.buttons-home{
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+margin: 0 auto;
+align-items: center;
+}
+
+.signup-btn{
+  width: 159px;
+  height: 50px;
+  background-color: black;
+  border-radius: 50px;
+  color: #ffffff;
+  
+  box-shadow: 10px 13px 37px #725f00;
+}
+.container-register{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background-color: #ffffff74;
+width: 400px;
+height: 400px;
+border-radius: 8px;
+border-color: 3px #243340;
+min-width: 250px;
+color: #000000;
+margin: 0 auto;
+margin-top: 150px;
+}
+
+.a-log{
+text-decoration: none;
+}
+
+
+.signup-btn1{
+ 
+  width: 159px;
+  height: 50px;
+  background-color: black;
+  border-radius: 50px;
+  color: #ffffff;
+  
+  box-shadow: 5px 5px 20px #725f00;
+}
+
+.cont-btn{
+display: flex;
+justify-content: center;
+}
+
+.form-control{
+
+border-color: #2d2c2c;
+
+}
+
+.background-register {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background-image: url(../images/registro.jpg);
+  background-position: center;
+  background-size: cover;
+  
+  }
+  .background-login {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/login.jpg);
+    background-position: center;
+    background-size: cover;
+    
+    }
+
+    .signup-btn2{
+
+      width: 159px;
+      height: 50px;
+      background-color: black;
+      border-radius: 50px;
+      color: #ffffff;
+   
+
+    }
+    a{
+      text-decoration: none;
+      list-style: none;
+      color: #ffffff;
+      gap: 30px;
+    }
+
+    .container-saludo{
+display: flex;
+flex-direction: column;
+
+    }
